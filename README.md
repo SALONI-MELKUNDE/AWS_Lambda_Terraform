@@ -1,2 +1,2 @@
-# Serverless-App-Feedback
-serverless API on AWS using Terraform
+# AWS_Lambda_Terraform
+
