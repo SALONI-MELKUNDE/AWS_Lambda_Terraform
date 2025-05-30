@@ -1,4 +1,4 @@
-# Serverless App Feedback
+# AWS Lambda Terraform
 
 This repository demonstrates provisioning an AWS Lambda function using Terraform. The sample Python Lambda returns a greeting message based on input data.
 
