@@ -77,7 +77,28 @@ Serverless_App_Feedback/
    terraform init
    ```
 2. **Deploy Infrastructure**
-   
+   ```bash
+   terraform apply
+   ```
+Approve the plan by typing yes. This will:
+- Zip the Lambda code (hello_python.py) to python/hello_python.zip
+- Create an AWS Lambda function named Jhoog-Lambda-Function
+
+3. **Invoke Lambda Function**
+You can test the Lambda with the AWS CLI:
+```bash
+aws lambda invoke \
+  --function-name Jhoog-Lambda-Function \
+  --payload '{"key1": "World"}' response.json
+
+cat response.json
+# => { "message": "Hello World!" }
+```
+
+
+## Cleanup
+
+
    
 
 
