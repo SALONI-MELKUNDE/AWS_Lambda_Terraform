@@ -73,19 +73,23 @@ Serverless_App_Feedback/
 ## Usage
 
 1. **Initialize Terraform**
+
    ```bash
    terraform init
    ```
-2. **Deploy Infrastructure**
+3. **Deploy Infrastructure**
+
    ```bash
    terraform apply
    ```
-Approve the plan by typing yes. This will:
+  Approve the plan by typing yes. This will:
 - Zip the Lambda code (hello_python.py) to python/hello_python.zip
 - Create an AWS Lambda function named Jhoog-Lambda-Function
 
 3. **Invoke Lambda Function**
+ 
 You can test the Lambda with the AWS CLI:
+
 ```bash
 aws lambda invoke \
   --function-name Jhoog-Lambda-Function \
@@ -97,6 +101,23 @@ cat response.json
 
 
 ## Cleanup
+
+To destroy all resources created by Terraform:
+
+```bash
+terraform destroy
+```
+
+## Notes
+
+- The .terraform/ directory is ignored by Git; Terraform downloads providers on demand.
+- The Lambda execution role ARN is defined in locals { lambda_role_arn = ... } and output as lambda_role_arn.
+
+
+## License 
+
+This project is licensed under the MIT License. See LICENSE for details.
+
 
 
    
