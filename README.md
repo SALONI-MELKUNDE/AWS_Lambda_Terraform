@@ -96,7 +96,7 @@ aws lambda invoke \
   --payload '{"key1": "World"}' response.json
 
 cat response.json
-# => { "message": "Hello World!" }
+{ "message": "Hello World!" }
 ```
 
 
