@@ -1,8 +1,8 @@
-# AWS Lambda Terraform
+# AWS Lambda Terraform 
 
 This repository demonstrates provisioning an AWS Lambda function using Terraform. The sample Python Lambda returns a greeting message based on input data.
 
-## Table of Contents
+## Table of Contents 👁️📌
 
 - [Architecture](#architecture)
 - [Prerequisites](#prerequisites)
@@ -18,7 +18,7 @@ This repository demonstrates provisioning an AWS Lambda function using Terraform
 
 
 
-## Architecture
+## Architecture 📐
 
 A simple flow:
 
@@ -28,7 +28,7 @@ A simple flow:
 
 
 
-## Prerequisites
+## Prerequisites ✔️
 
 - [Terraform](https://www.terraform.io/downloads.html) v1.0+
 - [AWS CLI](https://aws.amazon.com/cli/) configured with credentials and default region
@@ -36,7 +36,7 @@ A simple flow:
 
 
 
-## Project Structure
+## Project Structure 📂
 
 ```text
 Serverless_App_Feedback/
@@ -52,7 +52,7 @@ Serverless_App_Feedback/
 └── README.md                # Project documentation
 ```
 
-## Setup
+## Setup ⚙️
 
 1. **Clone the repository**
    ```bash
@@ -70,7 +70,7 @@ Serverless_App_Feedback/
    ```
 
 
-## Usage
+## Usage ▶️
 
 1. **Initialize Terraform**
 
@@ -100,7 +100,7 @@ cat response.json
 ```
 
 
-## Cleanup
+## Cleanup 🗑️
 
 To destroy all resources created by Terraform:
 
@@ -108,13 +108,13 @@ To destroy all resources created by Terraform:
 terraform destroy
 ```
 
-## Notes
-
+## Notes 📝
+ 
 - The .terraform/ directory is ignored by Git; Terraform downloads providers on demand.
 - The Lambda execution role ARN is defined in locals { lambda_role_arn = ... } and output as lambda_role_arn.
 
 
-## License 
+## License 🛡️
 
 This project is licensed under the MIT License. See LICENSE for details.
 
