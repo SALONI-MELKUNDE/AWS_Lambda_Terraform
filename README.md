@@ -16,9 +16,9 @@ This repository demonstrates provisioning an AWS Lambda function using Terraform
 - [Notes](#notes)
 - [License](#license)
 
-## Architecture
 
-![Architecture Diagram](https://user-images.githubusercontent.com/placeholder/architecture.png)
+
+## Architecture
 
 A simple flow:
 
@@ -26,11 +26,15 @@ A simple flow:
 2. Terraform provisions an AWS Lambda function with the zipped code.
 3. You invoke the Lambda function via AWS CLI or SDK.
 
+
+
 ## Prerequisites
 
 - [Terraform](https://www.terraform.io/downloads.html) v1.0+
 - [AWS CLI](https://aws.amazon.com/cli/) configured with credentials and default region
 - Python 3.8+ (for local development of the Lambda handler)
+
+
 
 ## Project Structure
 
@@ -46,5 +50,34 @@ Serverless_App_Feedback/
 ├── terraform.tfstate        # Terraform state file
 ├── terraform.tfstate.backup # Terraform state backup
 └── README.md                # Project documentation
+```
+
+## Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SALONI-MELKUNDE/AWS_Lambda_Terraform.git
+   cd AWS_Lambda_Terraform
+   ```
+2. **Configure AWS credentials**
+   Make sure your AWS credentials (~/.aws/credentials) and default region (~/.aws/config) are set up.
+
+3. **(Optional) Create a Python virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate      # Mac/Linux
+   venv\Scripts\Activate.ps1     # Windows PowerShell
+   ```
+
+
+## Usage
+
+1. **Initialize Terraform**
+   ```bash
+   terraform init
+   ```
+2. **Deploy Infrastructure**
+   
+   
 
 
